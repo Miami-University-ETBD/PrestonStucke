@@ -1,0 +1,127 @@
+/* External CSS */
+
+/* Style for body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: #c00000; /* Fixed a typo: removed an extra '#' */
+    padding: 20px;
+    margin: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Main content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Section styling */
+section {
+    width: 80%;
+    margin: 20px 0;
+}
+
+/* Headers */
+h2, h3, h4 {
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+/* Blockquote */
+blockquote {
+    font-style: italic; /* Italic text */
+    background-color: #f9f9f9; /* Light grey background for blockquote */
+    border-left: 5px solid #c00000; /* Red left border */
+    margin: 20px; /* Margin around blockquote */
+    padding: 15px; /* Padding inside blockquote */
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ol {
+    padding-left: 20px; /* Added padding for ordered lists */
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Aside styling */
+aside {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border: 1px solid #333;
+    margin: 20px 0;
+    width: 80%; /* To match the main content width */
+}
+
+/* Gallery images */
+img {
+    width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Spacing between images */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Changed to relative for better footer positioning */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional styles for About Us page */
+h2 {
+    margin-bottom: 10px; /* Space below the H2 headers */
+}
+
+ul {
+    margin: 10px 0; /* Space above and below unordered lists */
+}
