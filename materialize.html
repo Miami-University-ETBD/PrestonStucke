@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Specials - Big Steer Steakhouse</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+   <style>
+       .header-bg {
+           background-color: #6d4c41; /* Dark brown for a steakhouse feel */
+       }
+       .section-bg {
+           background-color: #efebe9; /* Light brown for background */
+       }
+       .shadow {
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       }
+       .table-header {
+           background-color: #8d6e63; /* Medium brown for table header */
+           color: white;
+       }
+       .circular-img {
+           border-radius: 50%;
+           width: 150px; /* Fixed size for circular image */
+           height: 150px;
+       }
+       .video-container {
+           position: relative;
+           padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+           height: 0;
+           overflow: hidden;
+       }
+       .video-container iframe {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+       }
+   </style>
+</head>
+<body>
+
+   <!-- Navbar -->
+   <nav class="header-bg">
+       <div class="nav-wrapper">
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="menu.html">Our Menu</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="materialize.html">Specials</a></li> <!-- Link to Materialize page -->
+               <li><a href="contact.html">Contact</a></li>
+           </ul>
+       </div>
+   </nav>
+
+   <!-- Header Section -->
+   <div class="section header-bg center-align">
+       <h1 class="white-text">Today's Specials</h1>
+       <p class="white-text">Delicious options at Big Steer Steakhouse</p>
+   </div>
+
+   <!-- About Us Section -->
+   <div id="about" class="section section-bg">
+       <div class="container">
+           <div class="row">
+               <div class="col s12 m6">
+                   <h2>About Us</h2>
+                   <p>At Big Steer Steakhouse, we serve the finest cuts of meat, grilled to perfection. Our commitment to quality and flavor brings our customers back again and again.</p>
+               </div>
+               <div class="col s12 m6">
+                   <img src="images/steak.jpg" alt="Big Steer Steakhouse" class="responsive-img shadow circular-img">
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Introduction Section -->
+   <div class="section section-bg">
+       <div class="container">
+           <h2>Welcome to Big Steer Steakhouse!</h2>
+           <p>At Big Steer Steakhouse, we pride ourselves on serving the finest cuts of meat and delectable sides, all expertly grilled to perfection. Explore our special dishes that highlight our commitment to quality and flavor. Whether you are a fan of juicy steaks or flavorful sides, we have something to satisfy your cravings!</p>
+           <img src="https://cdn.pixabay.com/photo/2018/07/30/07/14/steak-3640560_1280.jpg" alt="Steak" class="responsive-img shadow">
+       </div>
+   </div>
+
+   <!-- Specials Section -->
+   <div class="section section-bg">
+       <div class="container">
+           <h2>Special Dishes</h2>
+           <table class="highlight">
+               <thead class="table-header">
+                   <tr>
+                       <th>Item</th>
+                       <th>Description</th>
+                       <th>Price</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>Grilled Ribeye</td>
+                       <td>Juicy, marbled ribeye grilled to perfection.</td>
+                       <td>$25.00</td>
+                   </tr>
+                   <tr>
+                       <td>BBQ Beef Ribs</td>
+                       <td>Slow-cooked ribs with house-made BBQ sauce.</td>
+                       <td>$18.00</td>
+                   </tr>
+                   <tr>
+                       <td>Stuffed Baked Potato</td>
+                       <td>Stuffed with cheese, bacon, and chives.</td>
+                       <td>$5.00</td>
+                   </tr>
+               </tbody>
+           </table>
+           <img src="https://cdn.pixabay.com/photo/2016/02/17/10/47/steak-1202312_1280.jpg" alt="Special Dishes" class="responsive-img shadow">
+       </div>
+   </div>
+
+   <!-- Media Section -->
+   <div class="section">
+       <div class="container">
+           <h3>Watch Our Grill Masters!</h3>
+           <p>Check out our skilled chefs in action!</p>
+           <div class="video-container">
+               <iframe src="https://www.youtube.com/embed/rq-nNfUrgNc" frameborder="0" allowfullscreen></iframe>
+           </div>
+           <img src="https://cdn.pixabay.com/photo/2018/07/30/07/15/grill-3640575_1280.jpg" alt="Grill Masters" class="responsive-img shadow">
+       </div>
+   </div>
+
+   <!-- Contact Section -->
+   <div id="contact" class="section section-bg">
+       <div class="container">
+           <h2>Contact Us</h2>
+           <div class="row">
+               <div class="col s12 m6">
+                   <h5>Get in Touch!</h5>
+                   <p>If you have any questions or would like to make a reservation, feel free to contact us:</p>
+                   <p><strong>Phone:</strong> 614-400-2460</p>
+                   <p><strong>Email:</strong> <a href="mailto:stuckepr@maimioh.edu">stuckepr@maimioh.edu</a></p>
+                   <p><strong>Visit Us:</strong> Oxford, Ohio</p>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="page-footer header-bg">
+       <div class="container">
+           <div class="row">
+               <div class="col s12 center-align">
+                   <p class="white-text">&copy; 2024 Big Steer Steakhouse. All rights reserved.</p>
+               </div>
+           </div>
+       </div>
+   </footer>
+
+</body>
+</html>
