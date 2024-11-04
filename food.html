@@ -99,6 +99,118 @@
             <p>Our team at Big Steer Steak House is dedicated to providing an unforgettable dining experience. Feel free to reach out if you have any questions or would like to make a booking for a special occasion. We look forward to seeing you soon!</p>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+   <script>
+    // Initialize modal
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
 
+    // Function to display selected cut of steak
+    function displaySteakChoice() {
+        const selectedSteak = document.querySelector('input[name="steak"]:checked').value;
+        document.getElementById('steak-response').innerText = `You selected: ${selectedSteak}`;
+    }
+
+    // Function to handle email subscription form submission
+    function submitEmail(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        document.getElementById('email-response').innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+        document.getElementById('email').value = ''; // Clear the input
+
+        // Display modal
+        const modalText = document.getElementById('modal-content-text');
+        modalText.innerText = `Thank you for subscribing! We'll keep you updated on our latest specials and events at Big Steer Steakhouse.`;
+        const modal = M.Modal.getInstance(document.getElementById('modal1'));
+        modal.open();
+    }
+</script>
+
+<!-- Steak Choice Section -->
+<div id="radio-section" class="section container">
+    <h2>Select Your Favorite Cut</h2>
+    <form>
+        <p>
+            <label>
+                <input name="steak" type="radio" value="Ribeye" onclick="displaySteakChoice()"/>
+                <span>Ribeye</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input name="steak" type="radio" value="Filet Mignon" onclick="displaySteakChoice()"/>
+                <span>Filet Mignon</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input name="steak" type="radio" value="Sirloin" onclick="displaySteakChoice()"/>
+                <span>Sirloin</span>
+            </label>
+        </p>
+    </form>
+    <div id="steak-response"></div>
+</div>
+
+<!-- Email Subscription Section -->
+<div id="feedback-section" class="section container">
+    <h2>Stay Updated on Our Specials</h2>
+    <form onsubmit="submitEmail(event)">
+        <div class="input-field">
+            <input id="email" type="email" required>
+            <label for="email">Enter Your Email</label>
+        </div>
+        <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
+    </form>
+    <div id="email-response"></div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Subscription Confirmed</h4>
+        <p id="modal-content-text"></p>
+    </div>
+    <div class="modal-footer">
+        <button class="modal-close btn waves-effect waves-light">Close</button>
+    </div>
+</div>
+<div class="carousel">
+    <a class="carousel-item" href="#one!"><img src=juicy-steak-medium-rare-beef-with-spices-grilled-vegetables.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="salt-sprinkles-are-fallen-top-beef-steak-served-with-wine.jpg"></a> 
+    <a class="carousel-item" href="#three!"><img src="juicy-steak-medium-rare-beef-with-spices-grilled-vegetables (1).jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="kyle-mackie-1rEKYxooCh4-unsplash.jpg"></a>
+    <a class="carousel-item" href="#five!"><img src="alex-munsell-auIbTAcSH6E-unsplash.jpg"></a>
+    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Collapsible Example</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+    
+    <div class="container">
+        <h2>Collapsible List</h2>
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+        </ul>
+    </div>
+    
 </body>
 </html>
+
