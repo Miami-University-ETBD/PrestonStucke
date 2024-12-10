@@ -8,82 +8,87 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Steer Steak House</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<div class="container-fluid p-5 bg-dark text-white text-center">
-  <h1>Welcome to Big Steer Steakhouse</h1>
-  <p>Home of sizzling steaks and savory flavors!</p> 
-</div>
-  
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Our Specialties</h3>
-      <p>Sink your teeth into perfectly grilled steaks.</p>
-      <p>We offer a wide selection of premium cuts and mouthwatering sides.</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Visit Us</h3>
-      <p>Experience rustic charm and exceptional service.</p>
-      <p>Located in the heart of steak country, open 7 days a week!</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Reserve Your Table</h3>        
-      <p>Book your spot for an unforgettable dining experience.</p>
-      <p>Call us or reserve online today!</p>
-    </div>
-  </div>
-</div>
-<div class="container mt-3">
-    <h2>Discover Our Menu</h2>
-    <p>Click the button below to explore our mouthwatering selections.</p>
-    <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#menu">View Menu</button>
-    <div id="menu" class="collapse mt-3">
-      <p><strong>Signature Steaks:</strong> Perfectly grilled ribeye, filet mignon, and T-bone.</p>
-      <p><strong>Appetizers:</strong> Sizzling shrimp, loaded potato skins, and more.</p>
-      <p><strong>Desserts:</strong> Indulge in our chocolate lava cake and classic cheesecake.</p>
-    </div>
-  </div>
-  <div class="container mt-3">
-    <h2>Stay Updated with Big Steer Steakhouse</h2>
-    <p>Sign up for our newsletter and never miss a special or promotion!</p>
-    <form action="/submit_newsletter.php">
-      <div class="mb-3 mt-3">
-        <label for="email">Email Address:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
-      </div>
-      <div class="mb-3">
-        <label for="name">Full Name:</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
-      </div>
-      <div class="form-check mb-3">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" name="updates"> I want to receive updates and special offers.
-        </label>
-      </div>
-      <button type="submit" class="btn btn-dark">Subscribe</button>
-    </form>
-  </div>
+    <!-- Hide paragraph on click -->
+    <script>
+    $(document).ready(function(){
+        $("p").click(function(){
+            $(this).hide();
+        });
+    });
+    </script>
 
-  <div class="offcanvas offcanvas-start" id="demo">
-    <div class="offcanvas-header">
-      <h1 class="offcanvas-title">About Big Steer Steakhouse</h1>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    <!-- Alert on hover -->
+    <script>
+    $(document).ready(function(){
+        $("#p1").hover(function(){
+            alert("You entered p1!");
+        },
+        function(){
+            alert("Bye! You now leave p1!");
+        }); 
+    });
+    </script>
+
+    <!-- Toggle paragraphs on button click -->
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("p").toggle();
+        });
+    });
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Big Steer Steak House</h1>
+   <!-- Navbar -->
+   <nav class="header-bg">
+    <div class="nav-wrapper">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="materialize.html">Specials</a></li> <!-- Link to Materialize page -->
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="jquery.html">Features</a></li>
+        </ul>
     </div>
-    <div class="offcanvas-body">
-      <p><strong>Our Story:</strong> Big Steer Steakhouse has been serving sizzling steaks and hearty meals for over 20 years. We take pride in sourcing the finest ingredients and delivering an unforgettable dining experience.</p>
-      <p><strong>Our Atmosphere:</strong> Relax in our rustic, cozy dining room or enjoy a drink at our full-service bar. We aim to make every visit special, whether it's a family dinner or a romantic evening.</p>
-      <p><strong>Our Promise:</strong> Quality, flavor, and exceptional service are at the heart of everything we do.</p>
-      <button class="btn btn-dark" type="button">Learn More</button>
-    </div>
-  </div>
-  
-  <div class="container-fluid mt-3">
-    <h3>About Us</h3>
-    <p>Want to know more about Big Steer Steakhouse? Click below to read our story!</p>
-    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-      Learn About Us
-    </button>
-  </div>
+</nav>
+</header>
+
+<!-- Section 1: Hide paragraphs on click -->
+<section style="background-color: #ccc3ee;">
+    <p>Our steaks are grilled to perfection. Click to make it disappear!</p>
+    <p>Every dish is crafted to satisfy. Click to reveal more surprises!</p>
+    <p>Click here to learn about our signature sauces and sides!</p>
+</section>
+
+<hr>
+
+<!-- Section 2: Hover alerts -->
+<section style="background-color: #f1a1e8;">
+    <p id="p1">Medium-rare: Cooked to an internal temperature of 130-135 degrees Fahrenheit.</p>
+</section>
+
+<hr>
+
+<!-- Section 3: Toggle paragraphs -->
+<section style="background-color: #79f299;">
+    <button>Toggle between hiding and showing the paragraphs</button>
+    <p>Here are the types of cuts of steaks we have.</p>
+    <p>Our favorite cuts are T-bone, ribeye, and filet mignon.</p>
+</section>
 
 </body>
 </html>
+
+
